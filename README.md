@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Demo](screenshots/demo.png)
+![Demo](./output-screenshots/demo.png)
 
 Convert Terraform and Kubernetes files into architecture diagrams automatically.
 
