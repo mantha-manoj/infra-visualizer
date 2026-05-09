@@ -19,13 +19,13 @@ function Flow() {
     const formData = new FormData();
     formData.append("file", file);
 
-    let api = "http://127.0.0.1:8000/upload";
+    let api = "https://infra-visualizer-backend.onrender.com/upload"; 
 
     if (
       file.name.endsWith(".yaml") ||
       file.name.endsWith(".yml")
     ) {
-      api = "http://127.0.0.1:8000/upload-k8s";
+      api = "https://infra-visualizer-backend.onrender.com/upload-k8s";
     }
 
     const res = await fetch(api, {
@@ -46,7 +46,7 @@ function Flow() {
     formData.append("file", selectedFile);
 
     const res = await fetch(
-      "http://127.0.0.1:8000/explain",
+      "https://infra-visualizer-backend.onrender.com/explain",
       {
         method: "POST",
         body: formData,
